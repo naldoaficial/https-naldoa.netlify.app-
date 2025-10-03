@@ -1,100 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NaldoA — DJ & Produtor | Official</title>
+  <title>NaldoA — DJ & EDM</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- RADIO NO TOPO -->
-  <header class="radio-topo">
-    <img src="assets/radio naldoa play.jpg" alt="Rádio NaldoA Play" class="logo-radio">
-    <div>
-      <h2>📻 Rádio NaldoA Play</h2>
-      <audio controls>
-        <source src="https://stream.zeno.fm/xx785t45mf9uv" type="audio/mpeg">
-        Seu navegador não suporta o player de áudio.
-      </audio>
-    </div>
-  </header>
-
-  <!-- HEADER PRINCIPAL -->
+  <!-- Header -->
   <header class="site-header">
     <div class="brand">
-      <img src="assets/NA.jpg" alt="Logo NaldoA" class="logo">
-      <h1 class="sr-only">NaldoA</h1>
+      <img src="assets/NA.jpg" alt="Logo NaldoA" class="logo" />
+      <h1>NaldoA</h1>
     </div>
-
     <nav class="nav">
-      <button class="nav-toggle" id="navToggle">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
       <ul class="nav-list" id="navList">
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#musicas">Músicas</a></li>
         <li><a href="#contato">Contato</a></li>
-        <!-- Botão YouTube: abre a nova página em nova aba -->
-        <li>
-          <a class="youtube-btn" href="videos.html" target="_blank" rel="noopener noreferrer">
-            ▶ YouTube
-          </a>
-        </li>
+        <li><a href="https://open.spotify.com/artist/seu_link" target="_blank">Spotify</a></li>
+        <li><a href="https://www.youtube.com/@DjNaldoAoficial" target="_blank">YouTube</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <h2 class="title">NaldoA</h2>
-      <p class="subtitle">EDM • Produções originais • Em Todas as Plataformas Digitais</p>
-      <div class="hero-ctas">
-        <a href="#musicas" class="btn">Ouvir agora</a>
-        <a href="https://www.youtube.com/@DjNaldoAOficial" target="_blank" class="btn ghost">Canal no YouTube</a>
-      </div>
-    </div>
+  <!-- Conteúdo inicial -->
+  <main>
+    <section class="hero">
+      <h2>Bem-vindo ao site oficial do DJ NaldoA 🎵</h2>
+      <p>Confira minhas músicas, vídeos e novidades.</p>
+    </section>
 
-    <img src="assets/NaldoA.jpg" alt="NaldoA" class="foto-naldoa">
-  </section>
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>DJ NaldoA, especialista em EDM, com 4 álbuns lançados em todas as plataformas digitais.</p>
+    </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="about">
-    <div class="container">
-      <h3>Sobre</h3>
-      <p>Sou o <strong>NaldoA</strong>, DJ e produtor focado em EDM. Tenho <strong>4 álbuns lançados</strong> disponíveis em plataformas digitais e um canal no YouTube chamado <em>NaldoA</em>.</p>
-    </div>
-  </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Me encontre no Instagram: <a href="https://instagram.com/DjNaldoAoficial" target="_blank">@DjNaldoAoficial</a></p>
+    </section>
+  </main>
 
-  <!-- MÚSICAS / PLAYER -->
-  <section id="musicas" class="music">
-    <div class="container">
-      <h3>Discografia & Player</h3>
-      <!-- seus álbuns e player aqui (sem alteração) -->
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="contact">
-    <div class="container">
-      <h3>Contato</h3>
-      <form id="contactForm">
-        <label>Nome <input type="text" name="name" required></label>
-        <label>E-mail <input type="email" name="email" required></label>
-        <label>Mensagem <textarea name="message" rows="4" required></textarea></label>
-        <div class="form-actions">
-          <button type="submit" class="btn">Enviar</button>
-          <a href="#" class="btn ghost" id="whatsappBtn">WhatsApp</a>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© NaldoA — Todos os direitos reservados.</p>
-    </div>
+    <p>© 2025 NaldoA — Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>

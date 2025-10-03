@@ -1,113 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NaldoA — Vídeos | YouTube</title>
+  <title>Vídeos — NaldoA</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Header simples (pode repetir o header principal ou usar um header reduzido) -->
+  <!-- Header -->
   <header class="site-header">
     <div class="brand">
-      <img src="assets/NA.jpg" alt="Logo NaldoA" class="logo">
-      <h1 class="sr-only">NaldoA</h1>
+      <img src="assets/NA.jpg" alt="Logo NaldoA" class="logo" />
+      <h1>NaldoA</h1>
     </div>
     <nav class="nav">
-      <a class="btn ghost" href="index.html">← Voltar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="videos container">
-      <h2>Meus clipes no YouTube</h2>
-
-      <!-- Video grid: cada vídeo no mesmo padrão .video-container -->
-      <div class="video-grid">
-        <!-- Repita esses blocos para cada vídeo -->
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/aZHefqVqXpU?si=qJ48TfkT2nlGtbc7"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/AnYGQcgD1nY?si=_moGimnD7il3vFNP"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/cSvC3vtNCkQ?si=qNR-O6T3dFCQSdCM" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/dGdda27vfRM?si=Pg7SSL2mycoZqfym" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/s-p1w9kAkFY?si=HowX9VsJd0WCSQvk" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/dwYoOnT_7Pc?si=nipXGFuvNvU2Ku_G" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/AHsb5xThjyk?si=zyYG9hgIbHDr8qXU" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/-wFl2OcdDnk?si=61WyKpAh4FNYXhsU" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/GdE1z8Mf0zA?si=VPZDLYpKzTDH7LW2" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/s-p1w9kAkFY?si=7pWqgKOCoW1p2E4-" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/8FylSyd2Q6o?si=RASczcmWxq53MVyd" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/lcSXpMr0OUw?si=bN_hcy-73iEgqLMk" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/N4KYGevK0nA?si=GoKCRAuStZeGPel8" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/UZfhORsxS98?si=VDzNV2QwduI3xIwQ" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/BM4uCU1pUAY?si=KzkAJFsFe5eEmQGO" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/QoFsUuUjusc?si=0ZMeu_iu5KKm71Xa" allowfullscreen></iframe>
-        </div>
-
-        <!-- Fim da lista de vídeos -->
-      </div>
-    </section>
+  <!-- Página de vídeos -->
+  <main class="videos-page">
+    <h2>🎬 Meus Vídeos</h2>
+    <div class="videos-grid">
+      <iframe src="https://www.youtube.com/embed/aZHefqVqXpU" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/AnYGQcgD1nY" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/cSvC3vtNCkQ" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/dGdda27vfRM" frameborder="0" allowfullscreen></iframe>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© NaldoA — Todos os direitos reservados.</p>
-    </div>
+    <p>© 2025 NaldoA — Todos os direitos reservados.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

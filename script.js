@@ -48,6 +48,12 @@ document.addEventListener('DOMContentLoaded',function(){
     window.location.href = mailto;
   });
 
+// Menu responsivo
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navList').classList.toggle('open');
+});
+
+  
   // whatsapp quick link (replace PHONE with your number)
   const whatsappBtn = document.getElementById('whatsappBtn');
   whatsappBtn && whatsappBtn.addEventListener('click', function(e){

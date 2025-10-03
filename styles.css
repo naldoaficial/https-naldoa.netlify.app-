@@ -359,6 +359,70 @@ input[type="text"], input[type="email"], textarea {
   .nav-toggle { display: inline-block; }
 }
 
+/* ---------- Botão YouTube (na nav) ---------- */
+/* botão grande, chamativo, com ícone e cor parecida com YouTube */
+.youtube-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 24px;
+  background: linear-gradient(90deg,#ff3b3b,#ff0000);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(255,59,59,0.18);
+  transition: transform .12s;
+}
+.youtube-btn:hover { transform: translateY(-2px); }
+
+/* ---------- Grid de vídeos (nova página) ---------- */
+.video-grid {
+  display: grid;
+  /* 1 coluna em celular, 2 colunas em tablet, 3 em desktop (auto) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+  align-items: start;
+  margin-top: 14px;
+}
+
+/* Cada vídeo usa o mesmo padrão responsivo (16:9) */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Limitar tamanho visual em telas muito largas (para não ficar gigante) */
+.video-grid .video-container {
+  max-width: 720px; /* limite por vídeo; ajuste se quiser menor (ex: 480px) */
+  margin: 0 auto; /* centraliza cada vídeo na coluna */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Responsividade extra: menos padding em celulares */
+@media (max-width: 480px) {
+  .video-grid {
+    gap: 12px;
+  }
+  .video-grid .video-container { max-width: 100%; } /* ocupa 100% da coluna em celular */
+}
+
+
 /* =========================
    ACESSIBILIDADE
 ========================= */
